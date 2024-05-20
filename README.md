@@ -15,7 +15,7 @@ yarn install
 npm run dev
 ```
 
-4.Run esLint
+4. Run esLint
 
 ```
 npm run lint

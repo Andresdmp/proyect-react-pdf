@@ -12,7 +12,10 @@ const App: React.FC = () => {
         <strong>Autor:</strong> Andrés Daniel Moreno Prieto
       </p>
       <div>
-        <PDFDownloadLink document={<PDF />} fileName="myFirstPdf.pdf">
+        <PDFDownloadLink
+          document={<PDF pageCount={10} />}
+          fileName="myFirstPdf.pdf"
+        >
           {({ loading }) =>
             loading ? (
               <button style={{ width: '100%', height: '60px' }}>
@@ -36,7 +39,7 @@ const App: React.FC = () => {
         <PDFViewer
           style={{ marginTop: '30px', width: '100%', height: '600px' }}
         >
-          <PDF />
+          <PDF pageCount={10} />
         </PDFViewer>
       </div>
     </div>
